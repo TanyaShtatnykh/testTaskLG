@@ -153,7 +153,6 @@
       padding: 0;
       order: 2;
       background-color: transparent;
-      color: rgba(255, 255, 255, 0);
       &:hover {
         background-color: transparent;
       }
@@ -163,10 +162,13 @@
         display: block;
         top: 0;
         right: 0;
-        background: url(/img/sign.svg) no-repeat center;
+        background: url(../img/sign.svg) no-repeat center;
         width: 30px;
         height: 25px;
       }
+    }
+    &__sign-text {
+      display: none;
     }
   }
   @media screen and (max-width: 575.98px) {
@@ -177,19 +179,6 @@
     &__logo-name {
       font-size: px-to-em(24);
       line-height: lh-to-pct(36, 24);
-    }
-    &__btn-sign {
-      padding: 8px 16px;
-      font-size: px-to-em(14);
-      line-height: lh-to-pct(21, 14);
-    }
-  }
-  @media screen and (max-width: 360px) {
-    &__logo-name {
-      display: none;
-    }
-    &__btn-sign {
-      padding: 6px 12px;
     }
   }
 }
