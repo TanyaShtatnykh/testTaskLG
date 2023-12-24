@@ -1,0 +1,31 @@
+mixin main(modifier)
+  main.main&attributes(attributes)
+    .main__block
+      h1.main__title
+        | Now Buy Your PIN&nbsp;or
+        a.main__title-link(href="#!") &nbsp;Top&nbsp;Up
+        |  With&nbsp;Bank Transfer
+      p.main__description We Make international calling simple, relible, and cheap basedon your unique calling behavior.
+      button.main__btn-start(type="button") Get Started
+      form.main__search-form
+        input.main__search(type="search" placeholder="Where do you want to call?" minlength="4" maxlength="12" required)
+        button.main__btn-search(type="submit")
+          include ./img/search.svg
+      .main__wrapper
+        .main__users-list
+          img.main__user(src="img/user1.png", alt="User")
+          img.main__user(src="img/user2.png", alt="User")
+          img.main__user(src="img/user3.png", alt="User")
+          img.main__user(src="img/plus.png", alt="User")
+        p.main__users-text 
+          | 45k+ Regular User. 
+          a.main__price-link(href="#!") View Price Plan
+    .main__block
+      .main__countries
+        img.main__flag(src="img/flag2.png", alt="Flag")
+        img.main__flag(src="img/flag1.png", alt="Flag")
+        img.main__flag(src="img/flag3.png", alt="Flag")
+        img.main__flag(src="img/flag2.png", alt="Flag")
+        img.main__flag(src="img/flag2.png", alt="Flag")
+      img.main__photo(src="img/animate.png", alt="Photo") 
+

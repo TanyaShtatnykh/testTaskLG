@@ -1,0 +1,17 @@
+mixin header(modifier)
+  header.header&attributes(attributes)
+    a.header__logo-link(href="/")
+      img.header__logo(src="img/logo.svg", alt="Logo")
+      p.header__logo-name Global
+    .header__burger-btn
+      .header__burger-line
+      .header__burger-line
+      .header__burger-line
+      .header__burger-line
+    nav.header__menu
+      ul.header__menu-list
+        li.header__menu-item: a.header__menu-link(href="#!") Mobile Top Up
+        li.header__menu-item: a.header__menu-link(href="#!") About
+        li.header__menu-item: a.header__menu-link(href="#!") Rate
+        li.header__menu-item: a.header__menu-link(href="#!") Help
+    button.header__btn-sign(type="button") Sign Up
