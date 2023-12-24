@@ -75,6 +75,21 @@
     display: flex;
     align-items: center;
     margin-bottom: 40px;
+    &--disabled {
+      position: relative;
+      &::after {
+        content: "Минимальное количество симоволов: 4";
+        position: absolute;
+        top: 64px;
+        left: 20px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-size: px-to-em(12);
+        line-height: lh-to-pct(15, 12);
+        color:#FB9B69;
+      }
+    }
   }
   &__search {
     width: 100%;
@@ -119,6 +134,12 @@
     transition: 0.3s;
     &:hover {
       background-color: #FB9B69;
+    }
+    &--disabled {
+      opacity: 0.5;
+      &:hover {
+        background-color: #48B774;
+      }
     }
   }
   &__wrapper {
@@ -368,7 +389,20 @@
       line-height: lh-to-pct(21, 14);
     }
     &__search-form {
-      margin-bottom: 16px;
+      margin-bottom: 20px;
+      &--disabled {
+        &::after {
+          content: "Минимальное количество симоволов: 4";
+          position: absolute;
+          top: 56px;
+          left: 16px;
+          display: block;
+          width: 100%;
+          height: 100%;
+          font-size: px-to-em(10);
+          color:#FB9B69;
+        }
+      }
     }
     &__search {
       padding: 17px 30px 16px;
